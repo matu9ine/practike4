@@ -1,0 +1,15 @@
+.title {
+  color: #1B1C21;
+  font-family: 'TTLAkes Bold', sans-serif;
+  display: flex;
+  align-items: center;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 40px;
+    background: #41F6D7;
+    margin-right: 16px;
+  }
+}

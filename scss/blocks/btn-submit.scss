@@ -1,0 +1,25 @@
+.btn-submit {
+  cursor: pointer;
+  border: none;
+  background-color: #FF3E79;
+  border-radius: 16px;
+
+  &-text {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+  }
+
+  &:hover {
+    background-color: rgba(255, 62, 121, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(255, 62, 121, 0.3);
+  }
+
+}

@@ -1,0 +1,38 @@
+.button {
+  border: none;
+  cursor: pointer;
+  
+  &--menu {
+  background-color: inherit;
+  }
+  
+  &-more {
+  border: none;
+  background-color: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 16px;
+  margin-bottom: 16px;
+
+  &::before {
+    content: '';
+    background: url('../img/icon-read-more.svg') no-repeat center center;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    }
+
+  @media (min-width: 768px) {
+    padding-left: 25px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 32px;
+  }
+  }
+}

@@ -1,0 +1,23 @@
+.devices {
+
+  &__link {
+    height: 160px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &__link-text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    align-self: start;
+  }
+
+  &__item {
+    .main__section-link:after {
+      align-self: flex-end;
+    }
+  }
+
+}

@@ -1,0 +1,202 @@
+.side-menu {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #fff;
+  max-width: 360px;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+  z-index: 10;
+
+  @media (min-width: 768px) {
+    width: 320px;
+  }
+
+  @media (min-width: 1440px) {
+    display: block;
+    position: initial;
+    width: 100%;
+    box-shadow: none;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+  }
+
+  &__close-btn {
+    background: url('../img/burger-close.svg') no-repeat 0 0;
+    width: 40px;
+    height: 40px;
+    margin-right: 17px;
+
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  &--active {
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+  }
+
+  &__contacts {
+    display: flex;
+    padding-left: 16px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+
+    @media (min-width: 360px) {
+      padding-left: 24px;
+    }
+
+    @media (min-width: 768px) {
+      margin-top: 268px;
+    }
+
+    @media (min-width: 1440px) {
+      display: flex;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px;
+
+    @media (min-width: 360px) {
+      padding: 17px 24px;
+    }
+  }
+
+  &__close-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    position: relative;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      border-left: 4px solid #41F6D7;
+      color: #7E7E82;
+      padding-left: 12px;
+
+      @media (min-width: 360px) {
+        padding-left: 20px;
+      }
+
+      @media (min-width: 360px) {
+        padding-left: 24px;
+      }
+    }
+  }
+
+
+  &__bottom {
+    padding-left: 16px;
+
+    @media (min-width: 360px) {
+      padding-left: 24px;
+    }
+
+    &-contacts {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+
+    &-languages {
+      display: flex;
+      align-items: center;
+    }
+
+    &-language {
+      &:not(:last-child) {
+        margin-right: 7px;
+      }
+
+      &_btn {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+        text-transform: uppercase;
+        border: none;
+        background: inherit;
+      }
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        color: #7E7E82;
+      }
+    }
+
+    &-mail {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      color: #1B1C21;
+      margin-bottom: 12px;
+    }
+
+    &-phone {
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.6px;
+      color: #1B1C21;
+      font-family: 'TTLAkes Bold', sans-serif;
+    }
+  }
+
+  &__navigation {
+    @media (min-width: 768px) {
+      padding-top: 28px;
+    }
+
+    @media (min-width: 1440px) {
+      padding-top: 37px;
+    }
+  }
+
+  &__top {
+    @media (min-width: 1440px) {
+      display: flex;
+      align-items: center;
+      padding: 30px 30px 30px 24px;
+    }
+  }
+}

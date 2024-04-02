@@ -1,0 +1,45 @@
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+  height: 100%;
+  background: #fff;
+  transition: width 0.2s linear;
+  -webkit-transition: width 0.2s linear;
+  -moz-transition: width 0.2s linear;
+  -ms-transition: width 0.2s linear;
+  -o-transition: width 0.2s linear;
+    
+  &--active {
+    width: 320px;
+    z-index: 99;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+
+    @media (min-width: 768px) {
+      width: 440px;
+    }
+
+}
+
+  &__close {
+    background: url('../img/burger-close.svg') no-repeat 0 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+    border: none;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    margin-bottom: 24px;
+  }
+
+}

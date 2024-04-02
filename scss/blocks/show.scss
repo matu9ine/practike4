@@ -1,0 +1,15 @@
+.show-all {
+
+  &::before {
+    content: '';
+    background: url('../img/icon-read-more.svg') no-repeat center center;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+}
